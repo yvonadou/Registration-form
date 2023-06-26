@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regsitration-form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>REGISTRATION FORM</h1>
+  <p>Thanks to help you to improve our work.</p>
+
+  <form action="">
+<fieldset>
+<label for="first-name">Entrer votre Prenom: <input type="text" id="first-name" required></label> <br>
+<label for="last-name">Entrer votre nom de Famille: <input type="text"  name="" id="last-name" required></label> <br>
+<label for="email">Entrer votre Email: <input type="email" name="email" id="email" required></label> <br>
+<label for="password">Créer un nouveau Mot-passe: <input pattern="[a-z0-5]{8,}" type="password" name="password" id="password" required></label>
+</fieldset>
+
+<fieldset class="inline">
+  <p>Type d'utilisation:</p>
+<label for="personal-account"><input type="radio" name="name" id="personal-account" class="inline"> Compte personnel</label> <br>
+<label for="business-account"><input type="radio" name="name" id="business-account" class="inline"> Compte business</label> <br>
+<label for="terms-and-conditions"> <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions" required class="inline">J'accpte les <a href="https://www.freecodecamp.org/news/terms-of-service/" >termes et conditions</a></label>
+</fieldset>
+
+<fieldset>
+
+<label for="picture">Ajouter un photo d'identité: <input type="file" id="picture"></label> <br>
+<label for="age">Votre age: <input type="number" id="age" min="15" max="99"></label> <br>
+<p>Comment vous avez entendu parler de nous:</p>
+<label for="recommanded">
+<select name="recommanded" id="recommanded">
+  <option value="">(veillez faire un choix)</option>
+  <option value="1">Par un ami</option>
+  <option value="2">Par nos reseaux sociaux</option>
+  <option value="3">A la télé</option>
+  <option value="4">Autres</option>
+</select>
+</label> <br>
+<label for="bio">Un description de vous: <br><textarea name="bio" id="bio" cols="30" rows="10" placeholder="J'aime etudier..."></textarea></label>
+</fieldset>
+<input type="submit" value="Submit">
+
+
+
+
+
+
+  </form>
+  
+</body>
+</html>
